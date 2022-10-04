@@ -4,7 +4,6 @@ RFC6351:Ad hoc On-Demand Distance Vector (AODV) Routing中文翻译
 - [RFC3561:Ad hoc On-Demand Distance Vector (AODV) Routing](https://www.rfc-editor.org/rfc/rfc3561.html#section-6.12)
 - [论文:Ad-hoc on-demand distance vector routing](https://ieeexplore.ieee.org/document/749281)
 - Translator：[ego-Dong](https://github.com/Egoqing)
-- 蓝字部分为方便个人理解所添加的，可以忽略
 <br/>
 
 ## 目录
