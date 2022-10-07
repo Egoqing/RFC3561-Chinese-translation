@@ -158,7 +158,9 @@ RFC6351:Ad hoc On-Demand Distance Vector (AODV) Routing中文翻译
 - 必须发送路由回复确认（RREP-ACK）消息以响应设置了“A”位的 RREP 消息（参见[第5.2节](#52-route-reply-rrep-消息格式)）
 - 当可能存在阻止路由发现周期的完成的单向链路的危险时，需要回复RREP-ACK
   - 可能指的是RREP丢包的可能
+
 ![](https://github.com/Egoqing/RFC3561-Chinese-translation/blob/main/Img/RREP-ACK.jpg)
+
 - Type：4
 - Reserved：填充0；接收时被忽略
 <br/>
@@ -337,6 +339,7 @@ RFC6351:Ad hoc On-Demand Distance Vector (AODV) Routing中文翻译
   - 有效序列号字段被设置为真
   - 设置路由表中的下一跳为从其处收到RREQ的节点（从IP头中的源IP地址获得，通常不等于RREQ消息中的发起者IP地址字段）的IP地址
     - **<font color=blue>设置反向指针，指向发来第一个收到的RREQ 的邻居节点，作为前往源节点路由(反向路径)的下一跳节点</font>**
+    - <font color=blue> AODV发现的路由是时延最短的路由 </font>
   - 跳数从RREQ消息中的 "Hop Count"中复制
 <br/>
 
