@@ -325,6 +325,7 @@ RFC6351:Ad hoc On-Demand Distance Vector (AODV) Routing中文翻译
 - 然后检查它是否在至少最后的*PATH_DISCOVERY_TIME*内收到一个具有相同发起人的IP地址和RREQ ID的RREQ
   - 如果已经收到了这样的RREQ，该节点将默默地丢弃新收到的RREQ
 - 本小节的其余部分描述了对没有被丢弃的RREQ采取的行动，即**首次收到RREQ**应采取的行动
+  - <font color=blue> 因此，即使后续收到了跳数更小的RREQ(源IP与RREQ ID相同)，会**直接丢弃**，而不是更新前往源节点的路由</font>
 <br/>
 
 - 首先，它首先将RREQ中的跳数值增加1，加上通过中间节点的新的一跳（上一跳到本节点）
